@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        a{
+            color: yellowgreen;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*:visited modifica a forma após visitado a primeira vez*/
+        a:visited{
+            color: blue;
+        }
+        /* :hover muda a aparência quando coloca o mouse em cima*/
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+/* active muda de cor quando clicado*/
+        a:active{
+            color: yellow;
+        }
+/* a::after ou a::before para adicionar algo escrito após ter sido clicado*/
+        a::after{
+            content:' ⚝';
+        }
+       a::before{
+                content:'⚝ ';
+       }
+       .especial::after{
+        content: ✴;
+       }
+       .especial{
+        background-color: aquamarine;
+       }
+       /*
+       # = id
+       . = class
+       : = pseudo-class
+       :: = pseudo-elements
+       > = Children
+       
+       */
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li id="id"><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https:/www.amazon.com" class="especial">Amazon</a></li>
+    
+    </ul>
+</body>
+</html>

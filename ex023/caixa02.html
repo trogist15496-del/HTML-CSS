@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRUPANDO TAGS</title>
+   <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        background-image: linear-gradient(to top,#006663,#00B3AD); 
+    height: 950px;   }
+    header{
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 2px 2px 2px #662400;
+    }
+    main{
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 2px 2px 2px #662400;
+        border-radius: 10px 10px 10px 10px;
+    }
+    article{
+        background-color: lightgray;
+        padding: 5px;
+
+    }
+    article > aside{
+        background-color: dimgray;
+        color: white;
+        box-shadow: 2px 2px 2px #662400;
+        /*
+        sompra inferior>sombra direita> foco
+        */
+        
+        
+    }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin: 0px;
+        box-shadow: 2px 2px 2px #662400;
+
+    }
+    nav{
+        background-color: antiquewhite;
+        padding: 3px;
+        box-shadow: 2px 2px 2px #662400;
+        
+    }
+    nav > a{
+        text-decoration: none;
+        color: rgb(80, 100, 107);
+        font-weight: bold;
+        margin-right: 30px;
+
+    }
+
+    nav > a:hover{
+        text-decoration: underline;
+    }
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="https://www.youtube.com/watch?v=ZKGUQ6voWi0">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav> 
+        </header>
+    <main>
+
+        <section id="filmes">
+            <article>
+                <h2>Filmes ação</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi harum officiis dolores, aspernatur, repudiandae nam libero repellendus eum voluptatum quis unde. Veniam, iste consectetur. Animi rem possimus blanditiis neque? Saepe!</p>
+                <aside><p>Filmes que eu gosto</p></aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+
+        Desenvolvido por Gustavo
+
+    </footer>
+</body>
+</html>
