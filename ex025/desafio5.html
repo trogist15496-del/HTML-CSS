@@ -20,37 +20,72 @@
         td{
             border: 1px solid black;
         }
+        table.notas{
+            margin: -10px;
+            border-collapse: collapse;
+        }
+        .media{
+            text-align: left;
+        }
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <th rowspan="1">area</th>
-            <th rowspan="1">disciplina</th>
-            <th rowspan="2">Notas</th>
-            <th rowspan="1">Média</th>
+            <th>area</th>
+            <th>disciplina</th>
+            <th>Notas</th>
+            <th>Média</th>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="1">Exatas</th>
-                <th>
-                    <td>mat</td>
-                    <td>fis</td>
-                    <td>qui</td>
-                    <td>bio</td>
-                </th>
+                    <th rowspan="5" scope="colgroup">Exatas</th>
+                                <tr>
+                                    <td>matematica</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>fisica</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                </tr>
+                                <tr>
+                                    <td>quimica</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                </tr>
+                                <tr>
+                                    <td>biologia</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                    <td>0.0</td>
+                                </tr>
             </tr>
             <tr>
-                <th colspan="4">Média de Exatas</th>
+                <th colspan="4" class="media">Média de Exatas</th>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>humanas</th>
-                <td>hist</td>
-                <td>geo</td>
-            </tr>
+                    <th rowspan="3">humanas</th>
+                    <tr>
+                        <td>hist</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr>
+                        <td>geo</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                        <td>0.0</td>
+                    </tr>
             <tr>
-                <th colspan="4">Média de Humanas</th>
+                <th colspan="4" class="media">Média de Humanas</th>
                 <td>0.0</td>
             </tr>
         
