@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th rowspan="1">area</th>
+            <th rowspan="1">disciplina</th>
+            <th rowspan="2">Notas</th>
+            <th rowspan="1">Média</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="1">Exatas</th>
+                <th>
+                    <td>mat</td>
+                    <td>fis</td>
+                    <td>qui</td>
+                    <td>bio</td>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Exatas</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th>humanas</th>
+                <td>hist</td>
+                <td>geo</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Humanas</th>
+                <td>0.0</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>
