@@ -50,7 +50,7 @@ box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 background-attachment: fixed;
 }
 section.normal{
-background-color: rgb(255, 255, 255);
+background-color: rgb(202, 202, 202);
 color: rgb(0, 0, 0);
 }
 section.imagem > p{
