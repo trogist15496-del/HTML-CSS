@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando conteúdos</title>
+    <style>
+        .iframe-container{
+            position: relative;
+            width: 100%;
+            padding-bottom: 56%;
+            height: 0;
+        }
+        .iframe-container iframe{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 50%;
+            height: 100%;
+        }
+       .video{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56%;
+        height: 0;
+       }
+       .video iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+       }
+
+       .curriculo{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56%;
+
+       }
+       .curriculo iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       }
+    </style>
+</head>
+<body>
+    <h1>Conteudos dentro de iframe</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, alias nisi! Quam beatae doloribus consequatur saepe, ipsum ea distinctio officiis sed error, quidem alias iusto sequi autem aperiam cupiditate. Voluptas.</p>
+    <h2>Mapas</h2>
+    <div class="iframe-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23637.39236496951!2d-8.741152882576003!3d42.22141070553094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f62751a1d19e9%3A0x287d6822cd4a666c!2sGran%20V%C3%ADa%20de%20Vigo!5e0!3m2!1spt-PT!2ses!4v1757014575414!5m2!1spt-PT!2ses" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    
+<h2>videos</h2>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/qUk1veKV9ig?si=T01yKfp2203B6uRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <h2>Documentos</h2>
+    <div class="curriculo" style="height: 1000px;"><iframe src="https://docs.google.com/document/d/e/2PACX-1vRcqx5OH_dEiVBpLj4pGg8jvZW-qHXwwxqFFxMYdrdcMuG6Z7pR-2G7MQGCKL5kpQ/pub?embedded=true"></iframe></div>
+</body>
+</html>
