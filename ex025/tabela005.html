@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabelas</title>
+    <style>
+        body{
+            font-family: 
+            Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+        }
+        tr, th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        col.cnome{
+            background-color: red;
+        }
+        col.cprof{
+            background-color: blue;
+        }
+        col.csexo{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicios de Tabelas</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo" span="2">
+        <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>29</td>
+            <td>cozinheira</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>29</td>
+            <td>cozinheira</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>29</td>
+            <td>cozinheira</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>29</td>
+            <td>cozinheira</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>29</td>
+            <td>cozinheira</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>29</td>
+            <td>cozinheira</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
