@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de frames</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        iframe{
+            width: 95vh;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>PARA FAZER LINKS CLICAVEIS PARA APARECEREM EM UM IFRAME NA MESMA PÁGINA SE ADICIONA O "NAME" NO IFRAME E TARGET="NAME" NO LINK</p>
+    <ul>
+        <li><a href="pag001.html" target="tela">Primeira página</a></li>
+        <li><a href="iframe001.html" target="tela">Segunda Página</a></li>
+        <li><a href="iframe002.html" target="tela">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quae eveniet dolore soluta ad cumque fugiat magnam necessitatibus laborum, accusantium, facilis delectus velit quia aspernatur adipisci illum expedita aliquam sequi!</p>
+
+    <iframe name="tela" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quae eveniet dolore soluta ad cumque fugiat magnam necessitatibus laborum, accusantium, facilis delectus velit quia aspernatur adipisci illum expedita aliquam sequi!</p><img src='imagens/imagem.jpg'></img>'" frameborder="0">Infelizmente seu navegador não é compativel.</iframe>
+    
+</body>
+</html>
