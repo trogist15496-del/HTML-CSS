@@ -20,8 +20,8 @@
         td{
             border: 1px solid black;
         }
-        table.notas{
-            margin: -10px;
+        .notas{
+            border: 1px solid white;
             border-collapse: collapse;
         }
         .media{
@@ -32,39 +32,48 @@
 <body>
     <table>
         <thead>
-            <th>area</th>
-            <th>disciplina</th>
-            <th>Notas</th>
-            <th>Média</th>
+            <th rowspan="2">area</th>
+            <th rowspan="2">disciplina</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+            <tr>
+                <td>Nota 1</td>
+                <td>Nota 2</td>
+            </tr>
         </thead>
         <tbody>
             <tr>
-                    <th rowspan="5" scope="colgroup">Exatas</th>
+                <th rowspan="5" scope="colgroup">Exatas</th>
                                 <tr>
-                                    <td>matematica</td>
-                                    <td>0.0</td>
-                                    <td>0.0</td>
-                                    <td>0.0</td>
+                                        <td>matematica</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                </tr>
+                                <tr>
+                                
+                                        <td>fisica</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
+                                        <td>0.0</td>
                                     
-                                </tr>
-                                <tr>
-                                    <td>fisica</td>
-                                    <td>0.0</td>
-                                    <td>0.0</td>
-                                    <td>0.0</td>
-                                </tr>
-                                <tr>
+                                 </tr>
+                            <tr>
+                            
                                     <td>quimica</td>
                                     <td>0.0</td>
                                     <td>0.0</td>
                                     <td>0.0</td>
-                                </tr>
-                                <tr>
+                                
+                            </tr>
+                            <tr>
+                            
                                     <td>biologia</td>
                                     <td>0.0</td>
                                     <td>0.0</td>
                                     <td>0.0</td>
-                                </tr>
+                                
+                            </tr>
             </tr>
             <tr>
                 <th colspan="4" class="media">Média de Exatas</th>
@@ -73,22 +82,25 @@
             <tr>
                     <th rowspan="3">humanas</th>
                     <tr>
-                        <td>hist</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
+                    
+                            <td>hist</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                        
                     </tr>
                     <tr>
-                        <td>geo</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
-                        <td>0.0</td>
+                    
+                                <td>geo</td>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                        
                     </tr>
             <tr>
                 <th colspan="4" class="media">Média de Humanas</th>
                 <td>0.0</td>
             </tr>
-        
         </tbody>
     </table>
 </body>
