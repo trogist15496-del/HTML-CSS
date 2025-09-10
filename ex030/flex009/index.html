@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxes</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div.container{
+            background-color: yellow;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        div.item{
+            background-color: aqua;
+            border: 1px solid black;
+            flex-basis: 300px;
+            text-align: center;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div.item2{
+            background:url("imagem.jpg")
+            top center;
+            border: 1px solid black;
+            text-align: center;
+            flex: 1 0 300px;
+            overflow: hidden;
+            box-shadow: inset 0px 10px 10px -10px  black;
+            box-shadow: 1px 1px 10px black;
+            position: relative;
+            z-index: 2;
+        }
+        /*SHORTHAND
+        FLEX: GROW>SHRINK>BASIS */
+    </style>
+</head>
+<body>
+    <!--FLEX SHRINK
+        flex-shrink: 1 (sim, pode encolhar)
+        flex-grow: 0 (não pode encolher)
+        flex-shrink: 1 (sim, pode encolhar)
+        flex-grow: 1 (pode crescer)
+        flex-shrink: 1 (sim, pode encolhar)
+        flex-grow: 1 (pode crescer)
+        -->
+        <div class="container">
+            <div class="item">A</div>
+            <div class="item2"></div>
+            <div class="item">C</div>
+        </div>
+</body>
+</html>

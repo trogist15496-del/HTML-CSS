@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxes</title>
+    <style>
+        div.container{
+            background-color: yellow;
+            display: flex;
+        }
+        div.item1{
+            background-color: aqua;
+            border: 1px solid black;
+            flex: 1 1 auto;
+        }
+        div.item2{
+            background-color: aqua;
+            border: 1px solid black;
+            flex: 1 0 auto;
+        }
+        div.item3{
+            background-color: aqua;
+            border: 1px solid black;
+            flex: 0 1 auto;
+            /*flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+        }
+        /*
+            Flex: GROW>SHRINK>BASIS
+            ---------
+            flex:0 1 auto
+            flex: initial
+            -------
+            flex: 0 0 auto
+            flex: none
+            --------
+            flex: 1 1 auto
+            flex:auto
+            --------
+            flex: 3
+            flex: 3 1 auto
+        
+        */
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="item1">flex-direction:row; main-axis (esquerda pra direita),cross-axis /(cima pra baixo)</div>
+            <div class="item2">flex-direction:row-reverse;
+            main-axis (direita pra esquerda), cross-axis(cima pra baixo)
+            </div>
+            <div class="item3">flex-direction:column;main-axis(cima pra baixo), cross-axis(esquerda pra direita)</div>
+        </div>
+</body>
+</html>

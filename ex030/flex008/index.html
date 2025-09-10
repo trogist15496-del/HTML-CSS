@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxes</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div.container{
+            background-color: yellow;
+            display: flex;
+            height: 400px;
+            flex-flow: column wrap;            
+
+        }
+        div.item{
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        div#i1{align-self: flex-start;
+        width: 50%;}
+        div#i2{align-self:flex-end;}
+        div#i3{align-self: center;}
+        div#i4{align-self: stretch;}
+        div#i5{align-self:flex-start;}
+        div#i6{align-self:flex-end;}
+        div#i7{}
+
+        /*
+        ANATOMIA DOS ITEMS
+        ORDER(padrão)
+        todo item dentro do container tem um order:0
+        muda a ordem dos items dentro do container pela ordem dos números
+        ALIGN-SELF
+        auto:pega o alinhamento do container
+        flex-start: alinhamento perto do cross-start
+        flex-end: alinhamento perto do cross-end
+        center: meio entre o cross start e o cross end.
+        stretch: ocupa o espaço inteiro do cross-axis
+        
+        */
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="item" id="i1">A</div>
+            <div class="item" id="i2">B</div>
+            <div class="item" id="i3">C</div>
+            <div class="item" id="i4">D</div>
+            <div class="item" id="i5">E</div>
+            <div class="item" id="i6">F</div>
+            <div class="item" id="i7">G</div>
+        </div>
+</body>
+</html>
