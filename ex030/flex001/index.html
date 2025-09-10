@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxes</title>
+    <style>
+        div.container{
+            background-color: yellow;
+            display: flex;
+        }
+        div.item{
+            background-color: aqua;
+            border: 1px solid black;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="item">flex-direction:row; main-axis (esquerda pra direita),cross-axis /(cima pra baixo)</div>
+            <div class="item">flex-direction:row-reverse;
+            main-axis (direita pra esquerda), cross-axis(cima pra baixo)
+            </div>
+            <div class="item">flex-direction:column;main-axis(cima pra baixo), cross-axis(esquerda pra direita)</div>
+            <div class="item">flex-direction:column-reverse;
+            main-axis(baixo pra cima),cross-axis(esquerda pra direita)
+            </div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+</body>
+</html>
